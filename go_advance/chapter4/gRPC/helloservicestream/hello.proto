@@ -1,0 +1,18 @@
+syntax="proto3";
+
+option go_package="./;HelloServiceStram";
+
+// 运行命令为 protoco --go_out=plugins=grpc:. hello.proto
+package main;
+
+// 定义消息类型
+message String{
+    string value=1;
+}
+
+// 定义rpc服务
+service HelloServiceStram{
+    rpc Hello (String) returns (String);
+    // 注意此处是双向流
+    rpc Channel (stream String) returns (stream String);
+}

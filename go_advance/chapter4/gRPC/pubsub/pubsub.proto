@@ -1,0 +1,14 @@
+syntax="proto3";
+
+option go_package="./;PubSubStream";
+
+
+message String{
+    string value=1;
+}
+
+service PubSubService {
+    rpc Publish (String) returns (String);
+    // 注意只有接收者为流模式
+    rpc Subscribe (String) returns (stream String);
+}
