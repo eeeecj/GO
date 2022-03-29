@@ -1,0 +1,20 @@
+mysql:
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  dbname: gobasic
+  host: 127.0.0.1
+  logmode: ""
+  logzap: false
+  maxidleconn: 10
+  maxopenconn: 100
+  password: eeeecj
+  port: "3306"
+  username: root
+zap:
+  directory: log
+  encodedlevel: LowercaseColorLevelEncoder
+  format: console
+  level: info
+  loginconsole: true
+  prefix: '[gin-vue-admin/server]'
+  showline: true
+  stacktrace: stacktrace

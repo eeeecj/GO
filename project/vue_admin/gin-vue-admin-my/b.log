@@ -1,0 +1,3 @@
+{"level":"debug","ts":"2022-03-28T16:17:20.500+0800","msg":"Trying to hit GET request for www.google.com"}
+{"level":"error","ts":"2022-03-28T16:17:20.558+0800","msg":"Error fetching URL www.google.com : Error = Get \"www.google.com\": unsupported protocol scheme \"\""}
+{"level":"info","ts":"2022-03-28T16:17:20.663+0800","msg":"Success! statusCode = 200 OK for URL http://www.baidu.com"}
